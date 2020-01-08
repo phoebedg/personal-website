@@ -10,3 +10,8 @@
 .home__title {
   margin-top: 60px;
 }
+
+.home__text {
+  min-width: 300px;
+  max-width: 500px;
+}

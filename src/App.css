@@ -1,11 +1,14 @@
-.app__header {
+.app__container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   background-color: #1a3139;
   color: #d1d7c9;
+}
+
+.app__header {
+  align-items: center;
+  text-align: center;
 }
 
 .app__title {
@@ -17,7 +20,6 @@
 }
 
 .app__arrow {
-  position: absolute;
-  bottom: 65px;
+  margin-top: 70px;
   font-size: 40px;
 }
