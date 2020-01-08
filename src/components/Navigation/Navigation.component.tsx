@@ -1,15 +1,25 @@
-import React, { useState, Fragment } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import threeLines from "../../static/threeLines.svg";
 import "./Navigation.css";
-import { routes } from "../../routes";
+
+const navMenuItems = ["home", "personal", "professional", "projects", "press"];
 
 export const Navigation = () => {
   const [clicked, setClicked] = useState<boolean>(false);
-  const openNav = (e: React.MouseEvent) => {
+  const toggleNav = (e: React.MouseEvent) => {
     e.preventDefault();
     setClicked(!clicked);
   };
+  const closeNav = (e: React.MouseEvent) => {
+    setClicked(false);
+  };
+
+  const location = useLocation();
+  const getStyles = (link: string): string =>
+    location.pathname === `/${link}`
+      ? "navigation__link active"
+      : "navigation__link";
 
   return (
     <div className="navigation">
@@ -17,25 +27,25 @@ export const Navigation = () => {
         className="navigation__icon"
         src={threeLines}
         alt="nav icon"
-        onClick={openNav}
+        onClick={toggleNav}
       />
       {clicked && (
-        <Fragment>
+        <div className="navigation__modal" onClick={closeNav}>
           <div className="navigation__menu">
-            <span className="navigation__item">
-              <Link to={routes.home}>home</Link>
-            </span>
-            <span className="navigation__item">
-              <Link to={routes.personal}>personal</Link>
-            </span>
-            <span className="navigation__item">
-              <Link to={routes.professional}>professional</Link>
-            </span>
-            <span className="navigation__item">
-              <Link to={routes.press}>press</Link>
-            </span>
+            {navMenuItems.map(item => {
+              return (
+                <Link
+                  className={getStyles(item)}
+                  onClick={closeNav}
+                  to={`/${item}`}
+                  key={item}
+                >
+                  {item}
+                </Link>
+              );
+            })}
           </div>
-        </Fragment>
+        </div>
       )}
     </div>
   );

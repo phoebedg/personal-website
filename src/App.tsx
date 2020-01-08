@@ -4,6 +4,7 @@ import { Navigation } from "./components/Navigation/Navigation.component";
 import { Home } from "./components/HomePage/Home.component";
 import { Personal } from "./components/Personal/Personal.component";
 import { Professional } from "./components/Professional/Professional.component";
+import { Projects } from "./components/Projects/Projects.component";
 import { Press } from "./components/Press/Press.component";
 import phoebePassportPhoto from "./static/phoebePassportPhoto.jpeg";
 import "./App.css";
@@ -30,6 +31,9 @@ export const App: React.FC = () => {
           </Route>
           <Route path="/professional">
             <Professional />
+          </Route>
+          <Route path="/projects">
+            <Projects />
           </Route>
           <Route path="/press">
             <Press />

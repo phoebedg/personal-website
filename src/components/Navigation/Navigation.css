@@ -9,14 +9,32 @@
   cursor: pointer;
 }
 
+.navigation__modal {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  background: initial;
+}
+
 .navigation__menu {
   display: flex;
   justify-content: space-evenly;
-  min-width: 260px;
-  width: 350px;
+  min-width: 270px;
+  width: 450px;
 }
 
-.navigation__item {
+.navigation__link {
+  text-decoration: none;
+  color: #d1d7c9;
   font-weight: 800;
-  /* text-decoration: none; */
+}
+
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active,
+.navigation__link:visited,
+.active {
+  text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-.home {
+.content-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,11 +7,13 @@
   color: #1a3139;
 }
 
-.home__title {
+.content-page__title {
   margin-top: 60px;
 }
 
-.home__text {
+.content-page__body {
+  display: flex;
+  flex-direction: column;
   min-width: 300px;
   max-width: 500px;
 }
