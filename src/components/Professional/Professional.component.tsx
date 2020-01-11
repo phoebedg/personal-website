@@ -4,11 +4,18 @@ import "../HomePage/Home.css";
 export const Professional = () => {
   return (
     <div className="content-page">
-      <h2 className="content-page__title">Professional</h2>
+      <h2>career</h2>
       <div className="content-page__body">
-        <h4>Technologies</h4>
-        <span>JavaScript, Go, Python</span>
-        <span>React, react-redux, node.js, Django</span>
+        <h4>Tools, Technologies & Methodolgies</h4>
+        <span>JavaScript, ReactJS, Redux, Typescript</span>
+        <span>Webpack, SASS, CSS, HTML, Storybook</span>
+        <span>Golang, NodeJS, ExpressJS, Django, PostgreSQL</span>
+        <span>CircleCI, CI/CD, Heroku</span>
+        <span>TDD, Jest, Enzyme, TestCafe, Pytest, PACT</span>
+        <span>Git, Jira</span>
+        <span>Scrum, Agile</span>
+        <br />
+        <span>~</span>
         <h4>Experience</h4>
         <span>
           Full stack developer (Associate Consultant) at <b>Infinity Works</b>

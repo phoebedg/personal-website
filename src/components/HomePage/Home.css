@@ -1,14 +1,10 @@
 .content-page {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 80px 0 100px 0;
   color: #1a3139;
-}
-
-.content-page__title {
-  margin-top: 80px;
 }
 
 .content-page__body {
@@ -16,4 +12,10 @@
   flex-direction: column;
   min-width: 300px;
   max-width: 500px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.home__body {
+  text-align: justify;
 }

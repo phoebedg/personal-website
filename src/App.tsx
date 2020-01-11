@@ -6,7 +6,7 @@ import { Personal } from "./components/Personal/Personal.component";
 import { Professional } from "./components/Professional/Professional.component";
 import { Projects } from "./components/Projects/Projects.component";
 import { Press } from "./components/Press/Press.component";
-import phoebePassportPhoto from "./static/phoebePassportPhoto.jpeg";
+import phoebe from "./static/pInOx.jpg";
 import "./App.css";
 
 export const App: React.FC = () => {
@@ -17,11 +17,7 @@ export const App: React.FC = () => {
           <Navigation />
           <div className="app__header">
             <h1 className="app__title">phoebedg</h1>
-            <img
-              className="app__image"
-              src={phoebePassportPhoto}
-              alt="passport"
-            />
+            <img className="app__image" src={phoebe} alt="passport" />
             <p className="app__arrow">⇟⇟</p>
           </div>
         </div>
