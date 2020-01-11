@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import threeLines from "../../static/threeLines.svg";
 import "./Navigation.css";
@@ -6,27 +6,8 @@ import "./Navigation.css";
 const navMenuItems = ["home", "personal", "professional", "projects", "press"];
 
 export const Navigation = () => {
-  const prevScrollY = useRef(0);
 
   const [visible, setVisible] = useState<boolean>(false);
-  const [scrollPosition, setscrollPosition] = useState<number>(
-    prevScrollY.current
-  );
-
-  useEffect(() => {
-    const handleScroll = (): any => {
-      const currentScrollPosition = window.scrollY;
-      if (visible && scrollPosition > currentScrollPosition) {
-        setVisible(true);
-      }
-      if (visible && scrollPosition < currentScrollPosition) {
-        setVisible(false);
-      }
-      setscrollPosition(currentScrollPosition);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [visible, scrollPosition]);
 
   const toggleNav = (e: React.MouseEvent) => {
     e.preventDefault();
