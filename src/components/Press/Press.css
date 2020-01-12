@@ -1,13 +1,13 @@
-.press__link {
-  padding: 15px;
+.link {
+  padding: 10px;
   text-decoration: none;
   color: #1a3139;
 }
 
-.press__link:hover {
+.link:hover {
   text-decoration: underline;
 }
 
-.press__link:visited {
-  color: blueviolet;
+.link:visited {
+  color: #551A8B;
 }

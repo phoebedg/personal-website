@@ -3,10 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import threeLines from "../../static/threeLines.svg";
 import "./Navigation.css";
 
-const navMenuItems = ["home", "personal", "professional", "projects", "press"];
+const navMenuItems = ["home", "professional", "personal", "projects", "press"];
 
 export const Navigation = () => {
-
   const [visible, setVisible] = useState<boolean>(false);
 
   const toggleNav = (e: React.MouseEvent) => {
@@ -39,7 +38,7 @@ export const Navigation = () => {
                 <Link
                   className={getStyles(item)}
                   onClick={closeNav}
-                  to={`/${item}`}
+                  to={item === "home" ? "/" : `/${item}`}
                   key={item}
                 >
                   {item}

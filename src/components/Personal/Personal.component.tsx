@@ -6,7 +6,7 @@ export const Personal = () => {
   return (
     <div className="content-page">
       <h2>things i like</h2>
-      <div className="content-page__body">
+      <div className="content-page__body" style={{ paddingTop: "16px" }}>
         {likes.sort().map((el, i) => (
           <span key={i}>{el}</span>
         ))}

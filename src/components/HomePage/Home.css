@@ -19,3 +19,12 @@
 .home__body {
   text-align: justify;
 }
+
+.home__social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home__social-icon {
+  width: 40px;
+}

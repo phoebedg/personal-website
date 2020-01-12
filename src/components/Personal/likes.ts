@@ -55,7 +55,6 @@ export const likes = [
   "crisps",
   "studio ghibli",
   "spotify",
-  "amazon prime",
   "sudoku",
   "google drive",
   "citymapper",
