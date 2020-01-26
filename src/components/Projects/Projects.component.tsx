@@ -12,8 +12,8 @@ export const Projects = () => {
         <a className="link" href="https://guarded-thicket-52656.herokuapp.com/" target="_blank" rel="noopener noreferrer">Bootcamp project: Delivereat</a>
         <a className="link" href="https://github.com/TeamStrikeLevelUp/LevelUp" target="_blank" rel="noopener noreferrer">Bootcamp project: Level Up</a>
         <a className="link" href="https://github.com/TeamFunLingsLabs/lings-labs" target="_blank" rel="noopener noreferrer">Bootcamp project: Ling's Labs</a>
-        <a className="link" href="https://github.com/phoebedg/react-quizmachine" target="_blank" rel="noopener noreferrer">Bootcamp project: Redux Quizmachine</a>
         <a className="link" href="https://github.com/phoebedg/react-cinema" target="_blank" rel="noopener noreferrer">Bootcamp project: React Cinema</a>
+        <a className="link" href="https://github.com/phoebedg/react-quizmachine" target="_blank" rel="noopener noreferrer">Bootcamp project: React Quizmachine</a>
       </p>
     </div>
   );

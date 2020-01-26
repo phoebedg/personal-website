@@ -18,7 +18,7 @@ export const App: React.FC = () => {
           <div className="app__header">
             <h1 className="app__title">phoebedg</h1>
             <img className="app__image" src={phoebe} alt="phoebe smiling" />
-            <p className="app__arrow">⇟⇟</p>
+            <p id="main" className="app__arrow">⇟⇟</p>
           </div>
         </div>
         <Switch>

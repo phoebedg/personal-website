@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import github from "../../static/github-logo.svg";
 import linkedIn from "../../static/linkedin.svg";
 import twitter from "../../static/twitter.svg";
 
 export const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
   return (
     <div className="content-page">
       <h2>about me</h2>

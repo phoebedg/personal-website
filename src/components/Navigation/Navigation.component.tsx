@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import { useLocation } from "react-router-dom";
 import threeLines from "../../static/threeLines.svg";
 import "./Navigation.css";
 
@@ -38,7 +39,7 @@ export const Navigation = () => {
                 <Link
                   className={getStyles(item)}
                   onClick={closeNav}
-                  to={item === "home" ? "/" : `/${item}`}
+                  to={item === "home" ? "/" : `/${item}/#main`}
                   key={item}
                 >
                   {item}
