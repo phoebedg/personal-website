@@ -3,6 +3,40 @@
   flex-direction: column;
   min-width: 300px;
   max-width: 1100px;
+  padding: 20px;
+}
+
+.personal__content {
+  padding: 20px;
   line-height: 1.75;
   text-align: justify;
+}
+
+.personal__content-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personal__content-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 580px) {
+  .personal__content-cards {
+    flex-direction: column;
+  }
+
+  .personal__content-card {
+    width: unset;
+  }
+}
+
+.personal__citation {
+  font-size: 14px;
 }

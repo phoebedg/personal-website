@@ -5,9 +5,6 @@
 }
 
 .link:hover {
-  text-decoration: underline;
-}
-
-.link:visited {
+  background-color: #1a313917;
   color: #551A8B;
 }

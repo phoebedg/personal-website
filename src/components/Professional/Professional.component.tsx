@@ -10,7 +10,7 @@ export const Professional = () => {
         <span>JavaScript, ReactJS, Redux, Typescript</span>
         <span>Webpack, SASS, CSS, HTML, Storybook</span>
         <span>Golang, NodeJS, ExpressJS, Django, PostgreSQL</span>
-        <span>Jest, Enzyme, TestCafe, Pytest, PACT</span>
+        <span>Jest, Enzyme, TestCafe, Pytest, PACT, BrowserStack</span>
         <span>CircleCI, CI/CD, Heroku</span>
         <span>Git, Jira</span>
         <span>Scrum, Agile, TDD</span>

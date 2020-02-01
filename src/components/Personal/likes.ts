@@ -166,5 +166,7 @@ export const likes = [
   "st elmo's fire",
   "efficiency",
   "havaianas",
-  "gaimo"
+  "gaimo",
+  "maroon 5",
+  "hampstead heath"
 ];

@@ -18,13 +18,16 @@ export const Navigation = () => {
   };
 
   const location = useLocation();
-  const getStyles = (link: string): string =>
-    location.pathname === `/${link}`
+  const getMenuItemStyles = (link: string): string =>
+    location.pathname === `/${link}/` ||
+    (link === 'home' && location.pathname === '/')
       ? "navigation__link active"
       : "navigation__link";
+  const getNavStyles = (): string =>
+  visible ? "navigation navigation-mobile-open" : "navigation";
 
   return (
-    <div className="navigation">
+    <div className={getNavStyles()}>
       <img
         className="navigation__icon"
         src={threeLines}
@@ -37,7 +40,7 @@ export const Navigation = () => {
             {navMenuItems.map(item => {
               return (
                 <Link
-                  className={getStyles(item)}
+                  className={getMenuItemStyles(item)}
                   onClick={closeNav}
                   to={item === "home" ? "/" : `/${item}/#main`}
                   key={item}

@@ -12,6 +12,7 @@
   flex-direction: column;
   min-width: 300px;
   max-width: 500px;
+  padding: 20px;
   line-height: 1.75;
   text-align: center;
 }
