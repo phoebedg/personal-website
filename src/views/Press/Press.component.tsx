@@ -1,6 +1,5 @@
 import React from "react";
-import "../HomePage/Home.css";
-import "./Press.css";
+import "../content.css";
 
 export const Press = () => {
   return (

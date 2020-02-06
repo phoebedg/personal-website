@@ -17,15 +17,13 @@
   text-align: center;
 }
 
-.home__body {
-  text-align: justify;
+.link {
+  padding: 10px;
+  text-decoration: none;
+  color: #1a3139;
 }
 
-.home__social {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.home__social-icon {
-  width: 40px;
+.link:hover {
+  background-color: #1a313917;
+  color: #551a8b;
 }

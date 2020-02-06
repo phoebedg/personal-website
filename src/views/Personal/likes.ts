@@ -1,4 +1,4 @@
-export const likes = [
+const likesList = [
   "sri lanka",
   "jamaica",
   "ghana",
@@ -170,3 +170,11 @@ export const likes = [
   "maroon 5",
   "hampstead heath"
 ];
+
+const sortLikes = (likes: string[]): string[] => {
+  return likes
+    .sort()
+    .map((el, i) => (i % 2 === 0 ? `${el.toUpperCase()} ` : `${el} `));
+};
+
+export const likes = sortLikes(likesList);

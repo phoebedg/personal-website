@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import "./Home.css";
+import "../content.css";
+import "./home.css";
 import github from "../../static/github-logo.svg";
 import linkedIn from "../../static/linkedin.svg";
 import twitter from "../../static/twitter.svg";
@@ -7,7 +8,7 @@ import twitter from "../../static/twitter.svg";
 export const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  })
+  });
   return (
     <div className="content-page">
       <h2>about me</h2>
@@ -24,9 +25,27 @@ export const Home = () => {
         </p>
         <div className="home__social">
           <span></span>
-          <a href="https://github.com/phoebedg" target="_blank" rel="noopener noreferrer"><img className="home__social-icon" src={github} alt="github" /></a>
-          <a href="https://www.linkedin.com/in/phoebe-dg-29b795113/" target="_blank" rel="noopener noreferrer"><img className="home__social-icon" src={linkedIn} alt="linkedin" /></a>
-          <a href="https://twitter.com/DgPhoebe" target="_blank" rel="noopener noreferrer"><img className="home__social-icon" src={twitter} alt="twitter" /></a>
+          <a
+            href="https://github.com/phoebedg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="home__social-icon" src={github} alt="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/phoebe-dg-29b795113/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="home__social-icon" src={linkedIn} alt="linkedin" />
+          </a>
+          <a
+            href="https://twitter.com/DgPhoebe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="home__social-icon" src={twitter} alt="twitter" />
+          </a>
           <span></span>
         </div>
       </div>

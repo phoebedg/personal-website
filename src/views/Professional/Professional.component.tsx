@@ -1,5 +1,5 @@
 import React from "react";
-import "../HomePage/Home.css";
+import "../content.css";
 
 export const Professional = () => {
   return (
