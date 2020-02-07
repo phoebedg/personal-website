@@ -11,7 +11,7 @@ export const Home = () => {
   });
   return (
     <div className="content-page">
-      <h2>about me</h2>
+      <h2 className="content-page__title">about me</h2>
       <div className="content-page__body home__body">
         <p style={{ paddingBottom: "35px" }}>
           I am a full stack web developer with a passion for React. I started my

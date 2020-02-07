@@ -3,8 +3,8 @@ import "../content.css";
 
 export const Press = () => {
   return (
-    <div className="content-page">
-      <h2>press</h2>
+    <div id="main" className="content-page">
+      <h2 className="content-page__title">press</h2>
       <div className="content-page__body">
         <a
           className="link"

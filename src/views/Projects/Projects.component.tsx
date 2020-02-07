@@ -3,9 +3,9 @@ import "../content.css";
 
 export const Projects = () => {
   return (
-    <div className="content-page">
-      <h2>projects</h2>
-      <p className="content-page__body">
+    <div id="main" className="content-page">
+      <h2 className="content-page__title">projects</h2>
+      <div className="content-page__body">
         <a
           className="link"
           href="https://github.com/phoebedg/personal-website"
@@ -62,7 +62,7 @@ export const Projects = () => {
         >
           Bootcamp project: React Quizmachine
         </a>
-      </p>
+      </div>
     </div>
   );
 };

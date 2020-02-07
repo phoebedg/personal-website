@@ -3,8 +3,8 @@ import "../content.css";
 
 export const Professional = () => {
   return (
-    <div className="content-page">
-      <h2>career</h2>
+    <div id="main" className="content-page">
+      <h2 className="content-page__title">career</h2>
       <div className="content-page__body">
         <h4>Tools, Technologies & Methodolgies</h4>
         <span>JavaScript, ReactJS, Redux, Typescript</span>

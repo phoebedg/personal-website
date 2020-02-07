@@ -8,14 +8,14 @@ import { likes } from "./likes";
 
 export const Personal = () => {
   return (
-    <div className="content-page">
-      <h2>things i like</h2>
+    <div id="main" className="content-page">
+      <h2 className="content-page__title">things i like</h2>
       <div className="personal__body" style={{ paddingTop: "16px" }}>
-        <p className="personal__content">{likes}</p>
         <div className="personal__content-cards">
           <PersonalContentCard children={<Poem />} />
           <PersonalContentCard children={<Quotes />} />
         </div>
+        <div className="personal__content">{likes}</div>
       </div>
     </div>
   );
