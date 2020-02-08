@@ -62,7 +62,7 @@ const likesList = [
   "wine tasting",
   "snorkelling",
   "scrapbooking",
-  "nights out in brixton",
+  "brixton",
   "ducksoup soho",
   "ottolenghi",
   "the school of life",
@@ -132,7 +132,7 @@ const likesList = [
   "kimchi",
   "satay",
   "baths",
-  "yo sushi",
+  "sushi",
   "book of mormon",
   "secret hitler",
   "ice cold water",
@@ -168,7 +168,17 @@ const likesList = [
   "havaianas",
   "gaimo",
   "maroon 5",
-  "hampstead heath"
+  "hampstead heath",
+  "hidden object games",
+  "atypical",
+  "tech radar",
+  "bleecker",
+  "pimlico",
+  "copenhagen",
+  "iphone",
+  "starling",
+  "monzo",
+  "gousto"
 ];
 
 export const sortLikes = (likes: string[]): string[] => {

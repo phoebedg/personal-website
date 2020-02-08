@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #1a3139;
+  background: #1a3139;
   color: #d1d7c9;
 }
 
@@ -25,4 +25,18 @@
 .app__arrow {
   margin-top: 70px;
   font-size: 40px;
+}
+
+.app__footer {
+  text-align: right;
+  padding: 10px;
+  background: #1a3139;
+  margin-top: 60px;
+}
+
+.app__footer-text {
+  padding: 10px;
+  display: block;
+  color: #d1d7c9;
+  font-weight: 800;
 }

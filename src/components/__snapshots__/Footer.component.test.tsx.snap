@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ListLink 1`] = `
+<div>
+  <div
+    class="app__footer"
+  >
+    <span
+      class="app__footer-text"
+    >
+      phoebedg 2020
+    </span>
+  </div>
+</div>
+`;

@@ -6,6 +6,7 @@ import { Personal } from "./views/Personal/Personal.component";
 import { Professional } from "./views/Professional/Professional.component";
 import { Projects } from "./views/Projects/Projects.component";
 import { Press } from "./views/Press/Press.component";
+import { Footer } from "../src/components/Footer.component";
 import phoebe from "./static/pInOx.jpg";
 import "./app.css";
 
@@ -40,6 +41,7 @@ export const App: React.FC = () => {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </Fragment>
   );
