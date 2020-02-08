@@ -4,7 +4,13 @@ import { useLocation } from "react-router-dom";
 import threeLines from "../../static/threeLines.svg";
 import "./navigation.css";
 
-const navMenuItems = ["home", "professional", "personal", "projects", "press"];
+export const navMenuItems = [
+  "home",
+  "professional",
+  "personal",
+  "projects",
+  "press"
+];
 
 export const Navigation = () => {
   const [visible, setVisible] = useState<boolean>(false);
@@ -40,6 +46,7 @@ export const Navigation = () => {
             {navMenuItems.map(item => {
               return (
                 <Link
+                  data-testid="nav-link"
                   className={getMenuItemStyles(item)}
                   onClick={closeNav}
                   to={item === "home" ? "/" : `/${item}/#main`}
