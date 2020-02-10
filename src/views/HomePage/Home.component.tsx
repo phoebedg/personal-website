@@ -5,7 +5,7 @@ import github from "../../static/github-logo.svg";
 import linkedIn from "../../static/linkedin.svg";
 import twitter from "../../static/twitter.svg";
 
-export const Home = () => {
+export const Home: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });

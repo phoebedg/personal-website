@@ -16,6 +16,10 @@
   cursor: pointer;
 }
 
+.navigation__icon:hover {
+  filter: invert(20%);
+}
+
 .navigation__modal {
   position: fixed;
   top: 0;
@@ -56,9 +60,13 @@
 }
 
 .navigation__link:hover,
+.navigation__link:focus {
+  filter: invert(20%);
+}
+
+.navigation__link:hover,
 .navigation__link:focus,
 .navigation__link:active,
-.navigation__link:visited,
 .active {
   text-decoration: underline;
 }

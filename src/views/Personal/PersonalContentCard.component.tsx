@@ -5,6 +5,8 @@ interface PersonalContentCardProps {
   children: string | JSX.Element;
 }
 
-export const PersonalContentCard = ({ children }: PersonalContentCardProps) => {
-  return <div className="personal__content-card">{children}</div>;
-};
+export const PersonalContentCard: React.FC<PersonalContentCardProps> = ({
+  children
+}: PersonalContentCardProps) => (
+  <div className="personal__content-card">{children}</div>
+);

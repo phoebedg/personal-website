@@ -12,7 +12,7 @@ export const navMenuItems = [
   "press"
 ];
 
-export const Navigation = () => {
+export const Navigation: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
 
   const toggleNav = (e: React.MouseEvent) => {

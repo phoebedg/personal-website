@@ -8,16 +8,14 @@ export interface ListLinkProps {
   rel?: string;
 }
 
-export const ListLink = ({
+export const ListLink: React.FC<ListLinkProps> = ({
   title,
   href,
   className = "link",
   target = "_blank",
   rel = "noopener noreferrer"
-}: ListLinkProps) => {
-  return (
-    <a className={className} href={href} target={target} rel={rel}>
-      {title}
-    </a>
-  );
-};
+}: ListLinkProps) => (
+  <a className={className} href={href} target={target} rel={rel}>
+    {title}
+  </a>
+);

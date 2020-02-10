@@ -178,13 +178,28 @@ const likesList = [
   "iphone",
   "starling",
   "monzo",
-  "gousto"
+  "gousto",
+  "corona"
 ];
 
 export const sortLikes = (likes: string[]): string[] => {
-  return likes
-    .sort()
-    .map((el, i) => (i % 2 === 0 ? `${el.toUpperCase()} ` : `${el} `));
+  let sorted: string[] = [];
+  likes.sort().forEach(el => {
+    if (sorted.includes(el) === false) {
+      sorted.push(el);
+    }
+  });
+  return sorted.map((el, i) =>
+    i % 2 === 0 ? `${el.toUpperCase()} ` : `${el} `
+  );
 };
 
-export const likes = sortLikes(likesList);
+export const splitInThirds = (array: string[]) => {
+  let result = [];
+  for (let i = 3; i > 0; i--) {
+    result.push(array.splice(0, Math.ceil(array.length / i)));
+  }
+  return result;
+};
+
+export const likes = splitInThirds(sortLikes(likesList));

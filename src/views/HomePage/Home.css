@@ -10,3 +10,7 @@
 .home__social-icon {
   width: 40px;
 }
+
+.home__social-icon:hover {
+  filter: invert(20%);
+}
