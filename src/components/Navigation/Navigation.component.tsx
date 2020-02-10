@@ -3,17 +3,19 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
 import threeLines from "../../static/threeLines.svg";
 import "./navigation.css";
+import { NavIcon } from "./NavIcon.component";
 
 export const navMenuItems = [
   "home",
   "professional",
-  "personal",
   "projects",
+  "personal",
   "press"
 ];
 
 export const Navigation: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
+  const [hovered, setHovered] = useState<boolean>(false);
 
   const toggleNav = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -31,15 +33,18 @@ export const Navigation: React.FC = () => {
       : "navigation__link";
   const getNavStyles = (): string =>
     visible ? "navigation navigation-mobile-open" : "navigation";
+  const svgFill = visible ? "#d5621f" : hovered ? "#d5621f" : "#d1d7c9";
 
   return (
     <div className={getNavStyles()}>
-      <img
+      <div
         className="navigation__icon"
-        src={threeLines}
-        alt="nav icon"
+        onMouseEnter={(e: React.MouseEvent) => setHovered(true)}
+        onMouseLeave={(e: React.MouseEvent) => setHovered(false)}
         onClick={toggleNav}
-      />
+      >
+        <NavIcon fill={svgFill} />
+      </div>
       {visible && (
         <div className="navigation__modal" onClick={closeNav}>
           <div className="navigation__menu">

@@ -179,7 +179,9 @@ const likesList = [
   "starling",
   "monzo",
   "gousto",
-  "corona"
+  "corona",
+  "bibimbap",
+  "borough market"
 ];
 
 export const sortLikes = (likes: string[]): string[] => {

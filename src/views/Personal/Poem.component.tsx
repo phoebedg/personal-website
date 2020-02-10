@@ -3,7 +3,9 @@ import React, { Fragment } from "react";
 export const Poem: React.FC = () => (
   <Fragment>
     <span style={{ fontWeight: 800 }}>The Windhover 1918</span>
-    <span style={{ fontSize: "14px" }}>Gerard Manley Hopkins</span>
+    <span className="personal__citation" style={{ fontSize: "14px" }}>
+      Gerard Manley Hopkins
+    </span>
     <br />
     <span>I caught this morning morning’s minion, king-</span>
     <span>

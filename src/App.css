@@ -2,8 +2,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #1a3139;
-  color: #d1d7c9;
+  background: var(--teal-color);
+  color: var(--neutral-color);
 }
 
 .app__header {
@@ -30,13 +30,13 @@
 .app__footer {
   text-align: right;
   padding: 10px;
-  background: #1a3139;
+  background: var(--teal-color);
   margin-top: 60px;
 }
 
 .app__footer-text {
   padding: 10px;
   display: block;
-  color: #d1d7c9;
+  color: var(--neutral-color);
   font-weight: 800;
 }

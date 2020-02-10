@@ -6,8 +6,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #d1d7c9;
+  --teal-color: #1a3139;
+  --teal-color-fade: #1a3139ad;
+  --teal-color-fade-x: #1a313917;
+  --neutral-color: #d1d7c9;
+  --orange-color: #d5621f;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h2 {
+  color: var(--orange-color);
 }

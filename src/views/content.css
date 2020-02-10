@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #1a3139;
+  color: var(--teal-color);
   min-height: 75vh;
 }
 
@@ -19,15 +19,22 @@
   padding: 20px;
   line-height: 1.75;
   text-align: center;
+  border: solid .5px var(--orange-color);
+}
+
+@media screen and (max-width: 580px) {
+  .content-page__body {
+    border: unset;
+  }
 }
 
 .link {
   padding: 10px;
   text-decoration: none;
-  color: #1a3139;
+  color: var(--teal-color);
 }
 
 .link:hover {
-  background-color: #1a313917;
-  color: #551a8b;
+  background-color: var(--teal-color-fade-x);
+  color: var(--orange-color);
 }
