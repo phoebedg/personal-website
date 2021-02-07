@@ -1,5 +1,5 @@
 import React from "react";
-import "../../src/app.css";
+import "../../src/App.css";
 
 export const Footer: React.FC = () => (
   <div className="app__footer">

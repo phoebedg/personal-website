@@ -1,5 +1,5 @@
 import React from "react";
-import "./personal.css";
+import "./Personal.css";
 
 interface PersonalContentCardProps {
   children: string | JSX.Element;

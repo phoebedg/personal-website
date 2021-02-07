@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "./personal.css";
+import "./Personal.css";
 
 export const Quotes: React.FC = () => (
   <Fragment>

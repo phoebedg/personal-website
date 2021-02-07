@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../content.css";
-import "./home.css";
+import "./Home.css";
+import { ContentWrap } from "../../components/ContentWrap.component";
 import github from "../../static/github-logo.svg";
 import linkedIn from "../../static/linkedin.svg";
 import twitter from "../../static/twitter.svg";
@@ -10,8 +11,7 @@ export const Home: React.FC = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="content-page">
-      <h2 className="content-page__title">about me</h2>
+    <ContentWrap title={"about me"} >
       <div className="content-page__body home__body">
         <p style={{ paddingBottom: "35px" }}>
           I am a full stack web developer with a passion for React. I started my
@@ -49,6 +49,6 @@ export const Home: React.FC = () => {
           <span></span>
         </div>
       </div>
-    </div>
+    </ContentWrap>
   );
 };

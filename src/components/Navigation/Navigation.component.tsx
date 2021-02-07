@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
 import threeLines from "../../static/threeLines.svg";
-import "./navigation.css";
+import "./Navigation.css";
 import { NavIcon } from "./NavIcon.component";
 
 export const navMenuItems = [

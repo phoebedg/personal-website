@@ -8,7 +8,7 @@ import { Projects } from "./views/Projects/Projects.component";
 import { Press } from "./views/Press/Press.component";
 import { Footer } from "../src/components/Footer.component";
 import phoebe from "./static/pInOx.jpg";
-import "./app.css";
+import "./App.css";
 
 export const App: React.FC = () => {
   return (
