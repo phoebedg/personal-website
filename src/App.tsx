@@ -19,7 +19,7 @@ export const App: React.FC = () => {
           <div className="app__header">
             <h1 className="app__title">phoebedg</h1>
             <div className="app__image-container">
-              <img className="app__image" src={phoebe} alt="phoebe smiling" />
+              <img className="app__image" src={phoebe} alt="portrait" />
             </div>
             <p className="app__arrow">⇟⇟</p>
           </div>
