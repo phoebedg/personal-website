@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
-import threeLines from "../../static/threeLines.svg";
 import "./Navigation.css";
 import { NavIcon } from "./NavIcon.component";
 
@@ -39,6 +38,7 @@ export const Navigation: React.FC = () => {
     <div className={getNavStyles()}>
       <div
         className="navigation__icon"
+        aria-label="nav-icon"
         onMouseEnter={(e: React.MouseEvent) => setHovered(true)}
         onMouseLeave={(e: React.MouseEvent) => setHovered(false)}
         onClick={toggleNav}
