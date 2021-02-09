@@ -1,6 +1,7 @@
 # Phoebedg :koala: - my personal website
 
 A typescript project built with React.
+Visit http://phoebedg.herokuapp.com/ for deployed version.
 
 ## Scripts
 
