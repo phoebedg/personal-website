@@ -8,7 +8,6 @@ import { Professional } from "./views/Professional/Professional.component";
 import { Projects } from "./views/Projects/Projects.component";
 import { Press } from "./views/Press/Press.component";
 import { Footer } from "./components/Footer/Footer.component";
-import "./App.css";
 
 export const App: React.FC = () => {
   return (
