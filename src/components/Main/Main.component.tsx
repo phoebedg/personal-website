@@ -9,12 +9,16 @@ export const Main: React.FC = () => {
   const location = useLocation();
   return (
     <div className="main__header">
+      <Link to={"/#main"}>
       <h1 className="main__title">phoebedg</h1>
+      </Link>
       <div className="main__image-wrapper">
-        <img className="main__image" src={portrait} alt="portrait" />
+        <Link to={"/#main"}>
+          <img className="main__image" src={portrait} alt="portrait" />
+        </Link>
       </div>
       <div className="main__arrow-wrapper">
-      <Link to={`${location.pathname}#main`} className="main__arrow">⇟⇟</Link>
+      <Link to={`${location.pathname}#main`}>⇟⇟</Link>
       </div>
     </div>
   );
