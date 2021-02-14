@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import "../content.css";
 import "./Home.css";
 import { ContentWrap } from "../../components/ContentWrap.component";
-import github from "../../static/github-logo.svg";
-import linkedIn from "../../static/linkedin.svg";
-import twitter from "../../static/twitter.svg";
+import assets from "../../static";
 
 export const Home: React.FC = () => {
   useEffect(() => {
@@ -25,27 +23,17 @@ export const Home: React.FC = () => {
         </p>
         <div className="home__social">
           <span></span>
-          <a
-            href="https://github.com/phoebedg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="home__social-icon" src={github} alt="github" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/phoebe-dg-29b795113/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="home__social-icon" src={linkedIn} alt="linkedin" />
-          </a>
-          <a
-            href="https://twitter.com/DgPhoebe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="home__social-icon" src={twitter} alt="twitter" />
-          </a>
+          {assets.homeLinks.map(link => {
+            return (
+              <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="home__social-icon" src={link.icon} alt={link.webpage} />
+            </a>
+            )
+          })}
           <span></span>
         </div>
       </div>
