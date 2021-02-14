@@ -5,38 +5,3 @@
   background: var(--teal-color);
   color: var(--neutral-color);
 }
-
-.app__header {
-  text-align: center;
-}
-
-.app__title {
-  margin-top: 120px;
-}
-
-.app__image-container {
-  height: 375px;
-}
-
-.app__image {
-  width: 250px;
-}
-
-.app__arrow {
-  margin-top: 70px;
-  font-size: 40px;
-}
-
-.app__footer {
-  text-align: right;
-  padding: 10px;
-  background: var(--teal-color);
-  margin-top: 60px;
-}
-
-.app__footer-text {
-  padding: 10px;
-  display: block;
-  color: var(--neutral-color);
-  font-weight: 800;
-}

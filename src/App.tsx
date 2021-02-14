@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation/Navigation.component";
+import { Main } from "./components/Main/Main.component";
 import { Home } from "./views/HomePage/Home.component";
 import { Personal } from "./views/Personal/Personal.component";
 import { Professional } from "./views/Professional/Professional.component";
 import { Projects } from "./views/Projects/Projects.component";
 import { Press } from "./views/Press/Press.component";
-import { Footer } from "../src/components/Footer.component";
-import phoebe from "./static/pInOx.jpg";
+import { Footer } from "./components/Footer/Footer.component";
 import "./App.css";
 
 export const App: React.FC = () => {
@@ -16,13 +16,7 @@ export const App: React.FC = () => {
       <Router>
         <div className="app__container">
           <Navigation />
-          <div className="app__header">
-            <h1 className="app__title">phoebedg</h1>
-            <div className="app__image-container">
-              <img className="app__image" src={phoebe} alt="portrait" />
-            </div>
-            <p className="app__arrow">⇟⇟</p>
-          </div>
+          <Main />
         </div>
         <Switch>
           <Route path="/personal">

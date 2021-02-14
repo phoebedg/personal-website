@@ -1,0 +1,23 @@
+.main__header {
+    text-align: center;
+  }
+  
+  .main__title {
+    margin-top: 120px;
+  }
+  
+  .main__image-container {
+    height: 375px;
+  }
+  
+  .main__image {
+    width: 250px;
+  }
+  
+  .main__arrow {
+    display: block;
+    margin-top: 70px;
+    font-size: 40px;
+    text-decoration: none;
+    color: inherit;
+  }

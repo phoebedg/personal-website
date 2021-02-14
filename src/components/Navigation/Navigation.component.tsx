@@ -63,7 +63,6 @@ export const Navigation: React.FC = () => {
         <div
           className="navigation__modal"
           onClick={() => setVisible(false)}
-          onMouseLeave={() => setVisible(false)}
         >
           <div className="navigation__menu">
             {navMenuItems.map(item => {

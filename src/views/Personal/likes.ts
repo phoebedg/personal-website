@@ -95,7 +95,7 @@ const likesList = [
   "blue cheese",
   "mercato metropolitano",
   "killing eve",
-  "dirtbag",
+  "fleabag",
   "deadpool",
   "taron egerton",
   "somerset",
@@ -203,7 +203,11 @@ const likesList = [
   "dogs",
   "physalis",
   "lychees",
-  "stan smiths"
+  "stan smiths",
+  "django unchained",
+  "pickled eggs",
+  "puttanesca",
+  "ice skating"
 ];
 
 export const sortLikes = (likes: string[]): string[] => {

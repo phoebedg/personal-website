@@ -1,0 +1,14 @@
+.footer {
+    text-align: right;
+    padding: 10px;
+    background: var(--teal-color);
+    margin-top: 60px;
+  }
+  
+  .footer-text {
+    padding: 10px;
+    display: block;
+    color: var(--neutral-color);
+    font-weight: 800;
+  }
+  
