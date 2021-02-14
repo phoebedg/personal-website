@@ -6,7 +6,7 @@
     margin-top: 140px;
   }
   
-  .main__image-container {
+  .main__image-wrapper {
     height: 375px;
   }
   
@@ -14,10 +14,13 @@
     width: 250px;
   }
   
-  .main__arrow {
+  .main__arrow-wrapper {
     display: block;
     margin-top: 70px;
     font-size: 40px;
+  }
+
+  .main__arrow {
     text-decoration: none;
     color: inherit;
   }

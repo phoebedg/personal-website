@@ -11,10 +11,12 @@ export const Main: React.FC = () => {
   return (
     <div className="main__header">
       <h1 className="main__title">phoebedg</h1>
-      <div className="main__image-container">
+      <div className="main__image-wrapper">
         <img className="main__image" src={portrait} alt="portrait" />
       </div>
+      <div className="main__arrow-wrapper">
       <Link to={`${location.pathname}#main`} className="main__arrow">⇟⇟</Link>
+      </div>
     </div>
   );
 };
