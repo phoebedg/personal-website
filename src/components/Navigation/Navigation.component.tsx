@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ReactEventHandler, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
 import { Desktop, NonDesktop } from "../Responsive";
@@ -16,10 +16,23 @@ export const Navigation: React.FC = () => {
   const location = useLocation();
   const [visible, setVisible] = useState<boolean>(false);
   const [hovered, setHovered] = useState<boolean>(false);
+  const [lastEventFired, setLastEventFired] = useState<string>("");
 
   const handleOpenNav = () => {
     setHovered(true);
     setVisible(true);
+  };
+
+  const toggleNav = () => {
+    setHovered(!hovered);
+    setVisible(!visible);
+  };
+
+  const handleMobileEvent = (e: React.TouchEvent | React.MouseEvent) => {
+    if (e.type === "touchstart" || lastEventFired !== "touchstart") {
+      toggleNav();
+    };
+    setLastEventFired(e.type);
   };
 
   const getMenuItemStyles = (link: string): string =>
@@ -32,6 +45,7 @@ export const Navigation: React.FC = () => {
     visible ? "navigation navigation-mobile-open" : "navigation";
 
   const svgFill = hovered ? "#d5621f" : "#d1d7c9";
+  const svgMobileFill = visible ? "#d5621f" : "#d1d7c9";
 
   return (
     <div className={getNavStyles()}>
@@ -40,10 +54,10 @@ export const Navigation: React.FC = () => {
           className="navigation__icon"
           aria-label="nav-icon"
           onMouseEnter={handleOpenNav}
-          onTouchStart={handleOpenNav}
           onKeyPress={handleOpenNav}
           onMouseLeave={() => setHovered(false)}
           to={"/"}
+          onClick={(e) => toggleNav}
         >
           <NavIcon fill={svgFill} />
         </Link>
@@ -52,11 +66,10 @@ export const Navigation: React.FC = () => {
         <div
           className="navigation__icon"
           aria-label="nav-icon"
-          onMouseEnter={handleOpenNav}
-          onTouchStart={handleOpenNav}
-          onMouseLeave={() => setHovered(false)}
+          onClick={handleMobileEvent}
+          onTouchStart={handleMobileEvent}
         >
-          <NavIcon fill={svgFill} />
+          <NavIcon fill={svgMobileFill} />
         </div>
       </NonDesktop>
       {visible && (
