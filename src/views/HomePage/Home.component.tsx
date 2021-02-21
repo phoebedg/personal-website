@@ -26,6 +26,7 @@ export const Home: React.FC = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
+            key={link.webpage}
           >
             <img className="home__social-icon" src={link.icon} alt={link.webpage} />
           </a>
