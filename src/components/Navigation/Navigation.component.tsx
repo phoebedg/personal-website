@@ -57,7 +57,7 @@ export const Navigation: React.FC = () => {
           onKeyPress={handleOpenNav}
           onMouseLeave={() => setHovered(false)}
           to={"/"}
-          onClick={(e) => toggleNav}
+          onClick={toggleNav}
         >
           <NavIcon fill={svgFill} />
         </Link>
