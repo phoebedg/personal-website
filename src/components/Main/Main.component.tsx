@@ -9,9 +9,9 @@ export const Main: React.FC = () => {
   const location = useLocation();
   return (
     <div className="main__header">
-      <div>
+      <div className="main__title">
         <Link to={"/#main"}>
-          <h1 className="main__title">phoebedg</h1>
+          <h1>phoebedg</h1>
         </Link>
       </div>
       <div className="main__image-wrapper">
