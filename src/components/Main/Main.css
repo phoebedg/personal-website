@@ -1,21 +1,23 @@
 .main__header {
-    text-align: center;
-  }
-  
-  .main__title {
-    margin-top: 140px;
-  }
-  
-  .main__image-wrapper {
-    height: 375px;
-  }
-  
-  .main__image {
-    width: 250px;
-  }
-  
-  .main__arrow-wrapper {
-    display: block;
-    margin: 70px 0;
-    font-size: 40px;
-  }
+  text-align: center;
+}
+
+.main__title {
+  margin-top: 140px;
+  display: inline-block;
+  width: 160px;
+}
+
+.main__image-wrapper {
+  height: 375px;
+}
+
+.main__image {
+  width: 250px;
+}
+
+.main__arrow-wrapper {
+  display: block;
+  margin: 70px 0;
+  font-size: 40px;
+}

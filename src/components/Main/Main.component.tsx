@@ -9,9 +9,11 @@ export const Main: React.FC = () => {
   const location = useLocation();
   return (
     <div className="main__header">
-      <Link to={"/#main"}>
-      <h1 className="main__title">phoebedg</h1>
-      </Link>
+      <div>
+        <Link to={"/#main"}>
+          <h1 className="main__title">phoebedg</h1>
+        </Link>
+      </div>
       <div className="main__image-wrapper">
         <Link to={"/#main"}>
           <img className="main__image" src={portrait} alt="portrait" />

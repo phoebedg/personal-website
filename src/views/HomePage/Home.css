@@ -5,6 +5,7 @@
 .home__social {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 8px;
 }
 
 .home__social-icon {

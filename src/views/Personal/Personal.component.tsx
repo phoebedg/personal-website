@@ -8,6 +8,10 @@ import { Mobile, NonMobile } from "../../components/Responsive";
 
 export const Personal: React.FC = () => (
   <ContentWrap title={"things i like"}>
+    <div className="personal__content-cards">
+      <PersonalContentCard children={<Quotes />} />
+      <PersonalContentCard children={<Poem />} />
+    </div>
     <NonMobile>
       <div className="personal__content-cards">
         {likes.map((el, i) => (
@@ -22,9 +26,5 @@ export const Personal: React.FC = () => (
         {likes}
       </div>
     </Mobile>
-    <div className="personal__content-cards">
-      <PersonalContentCard children={<Quotes />} />
-      <PersonalContentCard children={<Poem />} />
-    </div>
   </ContentWrap>
 );
