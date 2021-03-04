@@ -236,7 +236,10 @@ export const personalLikes = [
   "django unchained",
   "pickled eggs",
   "puttanesca",
-  "ice skating"
+  "ice skating",
+  "calamari",
+  "lager",
+  "refried beans"
 ];
 
 export const personalQuotes = [
